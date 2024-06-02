@@ -14,7 +14,7 @@ class MapChart {
 
     async update(matchDate) {
         console.log("함수 호출 되나?:", matchDate); 
-        const matches = await d3.csv("../matches_with_coordinates.csv");
+        const matches = await d3.csv("https://raw.githubusercontent.com/dodoandchichi/InfoVis/main/matches_with_coordinates.csv");
         const match = matches.find(d => d.date_GMT === matchDate);
 
         if (match) {

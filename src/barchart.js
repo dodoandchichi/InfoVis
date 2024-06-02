@@ -17,7 +17,7 @@ class BarChart {
     }
 
     async update(selectedClub, xAttribute, yAttribute) {
-        const data = await d3.csv("../player.csv");
+        const data = await d3.csv("https://raw.githubusercontent.com/dodoandchichi/InfoVis/main/player.csv");
         const filteredData = data.filter(d => (selectedClub === "All" || d['Current Club'] === selectedClub) && (xAttribute === "All" || d.position === xAttribute))
             .sort((a, b) => +b[yAttribute] - +a[yAttribute])
             .slice(0, 10);
