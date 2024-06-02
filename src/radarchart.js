@@ -17,7 +17,7 @@ class RadarChart {
     }
   
     async update(selectedPlayer) {
-      const data = await d3.csv("../player.csv");
+      const data = await d3.csv("https://raw.githubusercontent.com/dodoandchichi/InfoVis/main/player.csv");
   
       function calculatePercentile(attribute, value) {
         const sortedValues = data.map(d => +d[attribute]).sort(d3.ascending);

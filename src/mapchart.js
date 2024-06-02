@@ -25,7 +25,7 @@ class MapChart {
             this.map.flyTo([lat, lon], 13, { duration: 2 }); 
 
             const homeTeamIcon = L.icon({
-                iconUrl: `../logos/${match.home_team_name}.png`, 
+                iconUrl: `https://github.com/dodoandchichi/InfoVis/tree/main/logos/${match.home_team_name}.png`, 
                 iconSize: [50, 50], 
                 iconAnchor: [25, 25], 
                 popupAnchor: [0, -25] 
