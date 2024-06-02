@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     Promise.all([
-        d3.csv("../player.csv"),
-        d3.csv("../rank.csv")
+        d3.csv("https://raw.githubusercontent.com/dodoandchichi/InfoVis/main/player.csv"),
+        d3.csv("https://raw.githubusercontent.com/dodoandchichi/InfoVis/main/rank.csv")
     ]).then(datasets => {
         const playerData = datasets[0];
         const rankData = datasets[1];
