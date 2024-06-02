@@ -1,0 +1,59 @@
+.controls {
+    margin-bottom: 20px;
+}
+
+#charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+#barchart,
+#radarchart {
+    width: 49%;
+    padding: 10px;
+}
+
+#barchart svg,
+#radarchart svg {
+    width: 100%;
+    height: auto;
+}
+
+.circle-tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    pointer-events: none; 
+    font-size: 12px;
+    z-index: 1000;
+}
+
+#linecirclechart, #map {
+    width: 49%;
+    height: 500px;
+}
+
+svg {
+    border: none;
+}
+
+#charts, #linecirclechart-map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content-wrapper {
+    text-align: center;
+}
+
+.match-point.active {
+    outline: none;
+    border: none;
+}
+
+.match-point:focus {
+    outline: none;
+    border: none;
+}
