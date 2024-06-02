@@ -94,7 +94,7 @@ class BarChart {
             .attr("y", d => yScale(d.full_name) + (yScale.bandwidth() - logoSize) / 2)
             .attr("width", 0)
             .attr("height", logoSize)
-            .attr("xlink:href", d => `https://github.com/dodoandchichi/InfoVis/tree/main/logos/${d['Current Club']}.png`)
+            .attr("xlink:href", d => `https://dodoandchichi.github.io/InfoVis/logos/${d['Current Club']}.png`)
             .transition()
             .duration(1000)
             .attr("width", logoSize);
